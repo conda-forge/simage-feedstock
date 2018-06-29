@@ -13,24 +13,23 @@ source:
     sha256: {{ sha256 }}
 
 build:
-    number: 1
-    skip: true  # [(win and py<35) or osx]
+    number: 2
+    skip: true  # [(win and vc<14) or osx]
 
 requirements:
     build:
-        - toolchain
-        - python  # [win]
-        - vc 14  # [win]
         - ninja  # [win]
         - cmake
-        - qt 5.*
-        - libpng  >=1.6.32,<1.6.35
-        - jpeg  9*
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
+    host:
+        - qt
+        - libpng
+        - jpeg
     run:
-        - vc 14  # [win]
-        - qt 5.*
-        - libpng  >=1.6.32,<1.6.35
-        - jpeg  9*
+        - qt
+        - libpng
+        - jpeg
 
 test:
     requires:
