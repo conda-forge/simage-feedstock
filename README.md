@@ -14,14 +14,16 @@ This is ``simage'', a library with image format loaders and front-ends to common
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/simage-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/simage-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/simage-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/simage-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/simage-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/simage-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/simage-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/simage-feedstock/branch/master)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/simage/badges/version.svg)](https://anaconda.org/conda-forge/simage)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/simage/badges/downloads.svg)](https://anaconda.org/conda-forge/simage)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-simage-green.svg)](https://anaconda.org/conda-forge/simage) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/simage.svg)](https://anaconda.org/conda-forge/simage) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/simage.svg)](https://anaconda.org/conda-forge/simage) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/simage.svg)](https://anaconda.org/conda-forge/simage) |
 
 Installing simage
 =================
