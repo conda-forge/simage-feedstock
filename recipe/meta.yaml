@@ -13,8 +13,7 @@ source:
     sha256: {{ sha256 }}
 
 build:
-    number: 2
-    skip: true  # [(win and vc<14) or osx]
+    number: 3
 
 requirements:
     build:
