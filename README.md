@@ -14,8 +14,7 @@ This is ``simage'', a library with image format loaders and front-ends to common
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/simage-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/simage-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/simage-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/simage-feedstock)
+[![Linux,OSX](https://img.shields.io/circleci/project/github/conda-forge/simage-feedstock/master.svg?label=Linux,OSX)](https://circleci.com/gh/conda-forge/simage-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/simage-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/simage-feedstock/branch/master)
 
 Current release info
