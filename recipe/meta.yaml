@@ -1,6 +1,6 @@
 {% set name = "simage" %}
 {% set version = "1.7.0" %}
-{% set commit = "cf953eacd849" %}
+{% set commit = "194ff9c" %}
 {% set sha256 = "a214e75cfb1f20554c748578d4fdcca9bfaf004bc51e073cafe68b72b1a864a8" %}
 
 package:
@@ -11,6 +11,8 @@ source:
     fn: {{ name }}.tar.gz
     url: https://bitbucket.org/Coin3D/simage/get/{{ commit }}.tar.gz
     sha256: {{ sha256 }}
+    patches:
+        - disable_quicktime.patch
 
 build:
     number: 3
