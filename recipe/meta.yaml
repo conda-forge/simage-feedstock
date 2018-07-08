@@ -1,7 +1,7 @@
 {% set name = "simage" %}
 {% set version = "1.7.0" %}
 {% set commit = "194ff9c" %}
-{% set sha256 = "a214e75cfb1f20554c748578d4fdcca9bfaf004bc51e073cafe68b72b1a864a8" %}
+{% set sha256 = "5b8fd63456364ce91e87b2cc954e711185ed67979391f4b47f967abb52fe6758" %}
 
 package:
     name: {{ name }}
