@@ -36,6 +36,8 @@ test:
     requires:
         - python {{ environ['PY_VER'] + '*' }}  # [win]
         - cmake  # [unix]
+        - {{ compiler('c') }}  # [unix]
+        - {{ compiler('cxx') }}  # [unix]
     files:
         - CMakeLists.txt  # [unix]
     commands:
