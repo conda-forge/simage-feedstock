@@ -34,6 +34,8 @@ requirements:
 
 test:
     requires:
+        - {{ compiler('c') }}
+        - {{ compiler('cxx') }}
         - python {{ environ['PY_VER'] + '*' }}  # [win]
         - cmake  # [unix]
         - {{ compiler('c') }}  # [unix]
