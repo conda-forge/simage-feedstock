@@ -29,7 +29,9 @@ requirements:
         - {{ cdt('libxdamage') }}  # [linux]
         - {{ cdt('libxfixes') }}  # [linux]
         - {{ cdt('libxcb') }}  # [linux]
-        - {{ cdt('libXxf86vm') }}  # [linux]
+        - {{ cdt('libxau') }}  # [linux]
+        - {{ cdt('libxext') }}  # [linux]
+        - {{ cdt('libxxf86vm') }}  # [linux]
     host:
         - qt
         - libpng
