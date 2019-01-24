@@ -20,7 +20,7 @@ build:
 
 requirements:
     build:
-        - ninja  # [win]
+        - ninja
         - cmake
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
@@ -44,12 +44,7 @@ requirements:
 
 test:
     requires:
-        - {{ compiler('c') }}
-        - {{ compiler('cxx') }}
-        - python {{ environ['PY_VER'] + '*' }}  # [win]
         - cmake  # [unix]
-        - {{ compiler('c') }}  # [unix]
-        - {{ compiler('cxx') }}  # [unix]
     files:
         - CMakeLists.txt  # [unix]
     commands:
