@@ -15,7 +15,7 @@ source:
         - disable_quicktime.patch
 
 build:
-    number: 1004
+    number: 1005
     skip: true  # [win and vc<14]
 
 requirements:
