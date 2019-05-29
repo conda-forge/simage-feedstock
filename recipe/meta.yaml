@@ -13,6 +13,7 @@ source:
     sha256: {{ sha256 }}
     patches:
         - disable_quicktime.patch
+        - cmake.patch
 
 build:
     number: 1006
