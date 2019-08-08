@@ -16,7 +16,7 @@ source:
         - cmake.patch
 
 build:
-    number: 1006
+    number: 1007
     skip: true  # [win and vc<14]
 
 requirements:
