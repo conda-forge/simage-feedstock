@@ -11,7 +11,6 @@ source:
     url: https://github.com/coin3d/simage/archive/simage-{{ version }}.tar.gz
     sha256: {{ sha256 }}
     patches:
-        - disable_quicktime.patch
         - cmake.patch
 
 build:
