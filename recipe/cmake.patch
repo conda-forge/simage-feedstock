@@ -1,10 +1,10 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index b080e74..646200c 100644
+index cbaa61b..871632b 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -1,4 +1,4 @@
--cmake_minimum_required(VERSION 2.8.11)
-+cmake_minimum_required(VERSION 3.10)
+@@ -627,4 +627,4 @@ install(EXPORT ${PROJECT_NAME}
  
- project(simage)
- 
+ # ############################################################################
+ # New CPACK section, please see the README file inside cpack.d directory.
+-add_subdirectory(cpack.d)
++# add_subdirectory(cpack.d)
