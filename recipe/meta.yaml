@@ -14,7 +14,7 @@ source:
         cmake.patch
 
 build:
-    number: 0
+    number: 1
     skip: true  # [win and vc<14]
 
 requirements:
@@ -33,11 +33,11 @@ requirements:
         - {{ cdt('libxext') }}  # [linux]
         - {{ cdt('libxxf86vm') }}  # [linux]
     host:
-        - qt
+        - qt-main
         - libpng
         - jpeg
     run:
-        - qt
+        - qt-main
         - libpng
         - jpeg
 
