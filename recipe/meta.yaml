@@ -44,6 +44,7 @@ requirements:
 test:
     requires:
         - cmake  # [unix]
+        - ninja
     files:
         - CMakeLists.txt  # [unix]
     commands:
