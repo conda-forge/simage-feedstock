@@ -14,7 +14,7 @@ source:
         cmake.patch
 
 build:
-    number: 1
+    number: 2
     skip: true  # [win and vc<14]
 
 requirements:
@@ -35,11 +35,11 @@ requirements:
     host:
         - qt-main
         - libpng
-        - jpeg
+        - libjpeg-turbo
     run:
         - qt-main
         - libpng
-        - jpeg
+        - libjpeg-turbo
 
 test:
     requires:
