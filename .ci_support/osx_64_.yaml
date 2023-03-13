@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '13'
+- '14'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,18 +11,13 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
-jpeg:
-- '9'
+- '14'
+libjpeg_turbo:
+- 2.1.5
 libpng:
 - '1.6'
 macos_machine:
 - x86_64-apple-darwin13.4.0
-pin_run_as_build:
-  jpeg:
-    max_pin: x
-  libpng:
-    max_pin: x.x
 qt_main:
 - '5.15'
 target_platform:
