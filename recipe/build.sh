@@ -8,4 +8,4 @@ cmake -G "Ninja" -B build -S . \
       -D SIMAGE_OGGVORBIS_SUPPORT:BOOL=OFF \
       -D SIMAGE_USE_QT6=ON
 
-ninja install
+ninja -C build install
