@@ -6,6 +6,7 @@ cmake -G "Ninja" -B build -S . \
       -D SIMAGE_USE_CPACK=OFF \
       -D SIMAGE_LIBSNDFILE_SUPPORT=OFF \
       -D SIMAGE_OGGVORBIS_SUPPORT:BOOL=OFF \
+      -D SIMAGE_GIF_SUPPORT:BOOL=OFF \
       -D SIMAGE_USE_QT6=ON
 
 ninja -C build install
