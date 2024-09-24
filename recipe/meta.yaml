@@ -33,9 +33,7 @@ requirements:
     host:
         - libpng
         - libjpeg-turbo
-    run:
-        - libpng
-        - libjpeg-turbo
+        - qt6-main
 
 test:
     requires:
