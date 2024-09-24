@@ -1,6 +1,5 @@
 {% set name = "simage" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "920904cd7b9814e8eb6d2954e064875a0be6f8c7e921cd8f1ddb434de1f946e3" %}
+{% set version = "1.8.3" %}
 
 package:
     name: {{ name }}
@@ -8,19 +7,18 @@ package:
 
 source:
     fn: {{ name }}.tar.gz
-    url: https://github.com/coin3d/simage/archive/simage-{{ version }}.tar.gz
-    sha256: {{ sha256 }}
-    patches:
-        cmake.patch
+    url: https://github.com/coin3d/simage/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: a7772abbf527ef7582d41b57bbbaee1e6780eb5bff18d43a5b80277f0807247c
 
 build:
-    number: 2
+    number: 0
     skip: true  # [win and vc<14]
 
 requirements:
     build:
         - ninja
         - cmake
+        - {{ stdlib("c") }}
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
         - {{ cdt('mesa-libgl-devel') }}  # [linux]
@@ -33,13 +31,9 @@ requirements:
         - {{ cdt('libxext') }}  # [linux]
         - {{ cdt('libxxf86vm') }}  # [linux]
     host:
-        - qt-main
         - libpng
         - libjpeg-turbo
-    run:
-        - qt-main
-        - libpng
-        - libjpeg-turbo
+        - qt6-main
 
 test:
     requires:
