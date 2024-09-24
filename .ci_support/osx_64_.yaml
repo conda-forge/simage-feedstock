@@ -24,6 +24,8 @@ libpng:
 - '1.6'
 macos_machine:
 - x86_64-apple-darwin13.4.0
+qt6_main:
+- '6.7'
 target_platform:
 - osx-64
 zip_keys:
