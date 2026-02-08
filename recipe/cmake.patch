@@ -1,0 +1,19 @@
+commit 24c3bd545b41e370ed2bbc0bff6a93156abe5b14
+Author: looooo <sppedflyer@gmail.com>
+Date:   Sun Feb 8 23:24:29 2026 +0100
+
+    Fix CMake compatibility: update minimum version to 3.5
+    
+    CMake no longer supports versions < 3.5. Update cmake_minimum_required
+    from 3.0 to 3.5 to resolve build errors.
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5586cd2..194087a 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-cmake_minimum_required(VERSION 3.0...3.29)
++cmake_minimum_required(VERSION 3.5...3.29)
+ 
+ set(SIMAGE_MAJOR_VERSION 1)
+ set(SIMAGE_MINOR_VERSION 8)
