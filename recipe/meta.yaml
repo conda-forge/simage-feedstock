@@ -9,9 +9,11 @@ source:
     fn: {{ name }}.tar.gz
     url: https://github.com/coin3d/simage/archive/refs/tags/v{{ version }}.tar.gz
     sha256: a7772abbf527ef7582d41b57bbbaee1e6780eb5bff18d43a5b80277f0807247c
+    patches:
+        - cmake.patch
 
 build:
-    number: 0
+    number: 1
     skip: true  # [win and vc<14]
 
 requirements:
@@ -34,6 +36,7 @@ requirements:
         - libpng
         - libjpeg-turbo
         - qt6-main
+        - zlib
 
 test:
     requires:
