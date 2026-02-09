@@ -36,7 +36,7 @@ requirements:
         - libpng
         - libjpeg-turbo
         - qt6-main
-        - libzlib
+        - zlib
 
 test:
     requires:
