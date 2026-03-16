@@ -18,3 +18,5 @@ target_platform:
 - win-64
 vc:
 - '14'
+zlib:
+- '1'
