@@ -2,63 +2,53 @@
 {% set version = "1.8.3" %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-    fn: {{ name }}.tar.gz
-    url: https://github.com/coin3d/simage/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: a7772abbf527ef7582d41b57bbbaee1e6780eb5bff18d43a5b80277f0807247c
-    patches:
-        - cmake.patch
+  fn: {{ name }}.tar.gz
+  url: https://github.com/coin3d/simage/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: a7772abbf527ef7582d41b57bbbaee1e6780eb5bff18d43a5b80277f0807247c
+  patches:
+    - cmake.patch
 
 build:
-    number: 1
-    skip: true  # [win and vc<14]
+  number: 2
+  skip: true  # [win and vc<14]
 
 requirements:
-    build:
-        - ninja
-        - cmake
-        - {{ stdlib("c") }}
-        - {{ compiler('c') }}
-        - {{ compiler('cxx') }}
-        - {{ cdt('mesa-libgl-devel') }}  # [linux]
-        - {{ cdt('mesa-dri-drivers') }}  # [linux]
-        - {{ cdt('libselinux') }}  # [linux]
-        - {{ cdt('libxdamage') }}  # [linux]
-        - {{ cdt('libxfixes') }}  # [linux]
-        - {{ cdt('libxcb') }}  # [linux]
-        - {{ cdt('libxau') }}  # [linux]
-        - {{ cdt('libxext') }}  # [linux]
-        - {{ cdt('libxxf86vm') }}  # [linux]
-    host:
-        - libpng
-        - libjpeg-turbo
-        - qt6-main
-        - zlib
+  build:
+    - ninja
+    - cmake
+    - {{ stdlib("c") }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - libpng
+    - libjpeg-turbo
+    - qt6-main
+    - zlib
+    - libgl-devel                        # [linux]
 
 test:
-    requires:
-        - cmake  # [unix]
-        - ninja
-    files:
-        - CMakeLists.txt  # [unix]
-    commands:
-        - where /r "%PREFIX%"  simage1.dll  # [win]
+  requires:
+    - cmake      # [unix]
+    - ninja
+  files:
+    - CMakeLists.txt      # [unix]
+  commands:
+    - where /r "%PREFIX%"  simage1.dll      # [win]
 
 about:
-    home: https://bitbucket.org/Coin3D/simage
-    license: BSD 3-Clause
-    license_family: BSD
-    license_file: COPYING
-    summary: Simage, image-library needed by Coin3d.
-    description: This is ``simage'', a library with image format loaders and front-ends
-                 to common import libraries. simage is meant for use with applications
-                 which reads image files as textures.
-    doc_url: https://bitbucket.org/Coin3D/simage
-    dev_url: https://bitbucket.org/Coin3D/simage
+  home: https://bitbucket.org/Coin3D/simage
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: COPYING
+  summary: Simage, image-library needed by Coin3d.
+  description: This is ``simage'', a library with image format loaders and front-ends to common import libraries. simage is meant for use with applications which reads image files as textures.
+  doc_url: https://bitbucket.org/Coin3D/simage
+  dev_url: https://bitbucket.org/Coin3D/simage
 
 extra:
-    recipe-maintainers:
-        - looooo
+  recipe-maintainers:
+    - looooo
